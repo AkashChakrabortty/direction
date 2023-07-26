@@ -26,21 +26,26 @@ const Achieve = () => {
         "General Studies Geography is divided into 3 parts including pre-cum-main",
     },
   ];
+
   return (
     <div>
       <h1 className="text-center fs-1 my-5">
         Achieve Excellence with <br /> Our Programmes
       </h1>
-      <div className="row">
-        {data.map((info, index) => {
+      <div className="">
+        {data.map((data, index) => {
           return (
-            <div key={index} className="col d-flex">
-              <div className="img">
-                <img src={info.img} alt="img" />
-              </div>
-              <div className="details">
-                <h2>{info.title}</h2>
-                <p>{info.details}</p>
+            <div key={index} className="col-lg-6 col-md-6">
+              <div className="row">
+                <div className="left card-bg"></div>
+                <div className="right"></div>
+                {/* <div className="col card-img">
+                  <img src={data.img} alt="img" />
+                </div>
+                <div className="col details">
+                  <h2>{data.title}</h2>
+                  <p>{data.details}</p>
+                </div> */}
               </div>
             </div>
           );

@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.png";
 import { AiTwotoneLock } from "react-icons/ai";
-import { AiOutlineArrowDown } from "react-icons/ai";
-import { PiStudentDuotone } from "react-icons/pi";
+import download from "../../assets/Download-Icon.png";
+import student from "../../assets/Student.png";
 
 const Nav = () => {
   return (
@@ -82,26 +82,19 @@ const Nav = () => {
                 Contact Us
               </a>
             </li>
-            <li className="nav-item fs-3 d-flex align-items-center">
+            <li className="nav-item fs-3 d-flex align-items-center lock">
               <AiTwotoneLock />
+              <span className="icon-nbr">1</span>
             </li>
             <li className="nav-item">
-              <button
-                type="button"
-                className="btn text-light"
-                style={{ backgroundColor: "#21409A", borderRadius: "30%" }}
-              >
-                <AiOutlineArrowDown />
+              <button type="button" className="download-btn text-light">
+                <img src={download} alt="" className="Download-Icon" />
                 Download
               </button>
             </li>
             <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
-              <button
-                type="button"
-                className="btn p-2"
-                style={{ border: "1px solid #21409A", borderRadius: "30%" }}
-              >
-                <PiStudentDuotone />
+              <button type="button" className="outline-btn">
+                <img src={student} alt="" className="Download-Icon" />
                 Students Login
               </button>
             </li>

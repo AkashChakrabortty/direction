@@ -12,19 +12,8 @@ const AdmissionOpen = () => {
           Geography Optional (Online/ Offline) Admission Open : 10th, May 2023
         </div>
 
-        <div className="me-3">
-          <span
-            className="fw-bold"
-            style={{
-              height: 5,
-              width: 5,
-              borderRadius: "50%",
-              border: "1px solid white",
-              padding: 2,
-            }}
-          >
-            x
-          </span>
+        <div className="me-3 d-flex align-items-center">
+          <i className="fa-regular fa-circle-xmark"></i>
         </div>
       </div>
     </div>
